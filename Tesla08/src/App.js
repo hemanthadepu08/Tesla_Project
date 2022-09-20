@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import './App.css';
-import Header from './components/Header/Header';
-import TeslaBattery from './containers/TeslaBattery';
+import React, { Component } from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
+import TeslaBattery from "./containers/TeslaBattery";
 
 const counterDefaultVal = {
   speed: {
@@ -9,15 +9,15 @@ const counterDefaultVal = {
     unit: "mph",
     step: 5,
     min: 45,
-    max: 70
+    max: 70,
   },
   temperature: {
     title: "Outside Temperature",
     unit: "°",
     step: 10,
     min: -10,
-    max: 40
-  }
+    max: 40,
+  },
 };
 
 class App extends Component {
@@ -26,7 +26,7 @@ class App extends Component {
       <div className="App">
         Tesla
         <Header />
-        <TeslaBattery counterDefaultVal={counterDefaultVal}/>
+        <TeslaBattery counterDefaultVal={counterDefaultVal} />
       </div>
     );
   }
