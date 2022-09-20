@@ -24,6 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        Tesla
         <Header />
         <TeslaBattery counterDefaultVal={counterDefaultVal}/>
       </div>
